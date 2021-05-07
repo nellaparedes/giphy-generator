@@ -1,0 +1,55 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.giphy-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.giphy-grid li {
+  margin: 0.2rem;
+}
+
+.giphy-grid img {
+  max-width: 100%;
+}
+
+.giphy-grid li a {
+  display: block;
+  position: relative;
+}
+
+.giphy-grid li a:hover {
+  background: #fff;
+}
+
+.giphy-grid li a:hover img {
+  opacity: 0.5;
+}
+
+.giphy-grid li a:hover:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.giphy-message {
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+  display: none;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+.giphy-message.success {
+  background-color: rgb(85, 141, 85);
+}
+.giphy-message.error {
+  background-color: rgb(201, 97, 97);
+}
